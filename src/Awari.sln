@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Awari", "Awari.vcproj", "{4343EE60-5BC2-4E7B-B98C-DDE6A846F8AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4343EE60-5BC2-4E7B-B98C-DDE6A846F8AE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4343EE60-5BC2-4E7B-B98C-DDE6A846F8AE}.Debug|Win32.Build.0 = Debug|Win32
+		{4343EE60-5BC2-4E7B-B98C-DDE6A846F8AE}.Release|Win32.ActiveCfg = Release|Win32
+		{4343EE60-5BC2-4E7B-B98C-DDE6A846F8AE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

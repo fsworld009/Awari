@@ -1,0 +1,428 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文 (台灣) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#include ""res\\Awari.rc2""  // 非 Microsoft Visual C++ 編輯過的資源\r\n"
+    "#include ""afxres.rc""         // 標準元件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Awari.ico"
+IDR_AwariTYPE           ICON                    "res\\AwariDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "遊戲(&G)"
+    BEGIN
+        MENUITEM "開新遊戲(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "Debug",                       ID_DEBUG
+        MENUITEM SEPARATOR
+        MENUITEM "結束(&X)",                      ID_APP_EXIT
+    END
+    POPUP "說明(&H)"
+    BEGIN
+        MENUITEM "關於 Awari(&A)...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "關於 Awari"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Awari 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "確定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_AWARI_FORM DIALOGEX 0, 0, 353, 198
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "CLICK",IDC_CLICK0,45,154,33,19,WS_DISABLED
+    PUSHBUTTON      "CLICK",IDC_CLICK1,90,154,33,19,WS_DISABLED
+    PUSHBUTTON      "CLICK",IDC_CLICK2,135,154,33,19,WS_DISABLED
+    PUSHBUTTON      "CLICK",IDC_CLICK3,180,154,33,19,WS_DISABLED
+    PUSHBUTTON      "CLICK",IDC_CLICK4,225,154,33,19,WS_DISABLED
+    PUSHBUTTON      "CLICK",IDC_CLICK5,270,154,33,19,WS_DISABLED
+    CTEXT           "4",IDC_SCORE0,45,112,33,10
+    CTEXT           "4",IDC_SCORE1,90,112,33,10
+    CTEXT           "4",IDC_SCORE2,135,112,33,10
+    CTEXT           "4",IDC_SCORE3,180,112,33,10
+    CTEXT           "4",IDC_SCORE4,225,112,33,10
+    CTEXT           "4",IDC_SCORE5,270,112,33,10
+    CTEXT           "4",IDC_SCORE11,45,52,33,10
+    CTEXT           "4",IDC_SCORE10,90,52,33,10
+    CTEXT           "4",IDC_SCORE9,135,52,33,10
+    CTEXT           "4",IDC_SCORE8,180,52,33,10
+    CTEXT           "4",IDC_SCORE7,225,52,33,10
+    CTEXT           "4",IDC_SCORE6,270,52,33,10
+    CTEXT           "0",IDC_PLAYER0_SCORE,298,82,33,10
+    CTEXT           "0",IDC_PLAYER1_SCORE,16,78,33,10
+    LTEXT           "player",IDC_STATIC,306,94,20,12
+    LTEXT           "CPU",IDC_STATIC,27,94,20,12
+    PUSHBUTTON      "先手",IDC_FIRST,115,76,33,19
+    PUSHBUTTON      "後手",IDC_SECOND,201,76,33,19
+END
+
+IDD_DEBUG DIALOGEX 0, 0, 276, 161
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Debug"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,219,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,219,24,50,14
+    EDITTEXT        IDC_DISK6,202,58,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISK7,167,58,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISK8,133,58,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISK9,100,58,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISK10,65,58,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISK0,30,120,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISK1,64,120,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISK2,98,120,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISK3,132,120,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISK5,200,120,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISK4,166,120,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CPU_SCORE,14,91,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLAYER_SCORE,231,90,26,12,ES_AUTOHSCROLL
+    CONTROL         "換玩家",IDC_R_PLAYER,"Button",BS_AUTORADIOBUTTON | WS_GROUP,36,21,40,10
+    CONTROL         "換電腦",IDC_R_CPU,"Button",BS_AUTORADIOBUTTON,36,31,40,10
+    EDITTEXT        IDC_DISK11,32,58,26,12,ES_AUTOHSCROLL
+    LTEXT           "搜尋深度",IDC_STATIC,85,26,35,12
+    EDITTEXT        IDC_S_DEPTH,127,28,38,13,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040403b6"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名稱>"
+            VALUE "FileDescription", "TODO: <檔案說明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Awari.exe"
+            VALUE "LegalCopyright", "TODO: (c) <公司名稱>.  All rights reserved."
+            VALUE "OriginalFilename", "Awari.exe"
+            VALUE "ProductName", "TODO: <產品名稱>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 950
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_AWARI_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_DEBUG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失敗。請確認 OLE 程式庫的版本是否正確。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Awari\n\nAwari\n\n\nAwari.Document\nAwari.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Awari"
+    AFX_IDS_IDLEMESSAGE     "就緒"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文件\n開新檔案"
+    ID_FILE_OPEN            "開啟現有文件\n開啟舊檔"
+    ID_FILE_CLOSE           "關閉使用中文件\n關閉檔案"
+    ID_FILE_SAVE            "儲存使用中文件\n儲存檔案"
+    ID_FILE_SAVE_AS         "將使用中文件以新名稱儲存\n另存新檔"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "顯示程式資訊、版本號碼及著作權\n關於"
+    ID_APP_EXIT             "結束應用程式; 提示使用者儲存文件\n結束"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "開啟這份文件"
+    ID_FILE_MRU_FILE2       "開啟這份文件"
+    ID_FILE_MRU_FILE3       "開啟這份文件"
+    ID_FILE_MRU_FILE4       "開啟這份文件"
+    ID_FILE_MRU_FILE5       "開啟這份文件"
+    ID_FILE_MRU_FILE6       "開啟這份文件"
+    ID_FILE_MRU_FILE7       "開啟這份文件"
+    ID_FILE_MRU_FILE8       "開啟這份文件"
+    ID_FILE_MRU_FILE9       "開啟這份文件"
+    ID_FILE_MRU_FILE10      "開啟這份文件"
+    ID_FILE_MRU_FILE11      "開啟這份文件"
+    ID_FILE_MRU_FILE12      "開啟這份文件"
+    ID_FILE_MRU_FILE13      "開啟這份文件"
+    ID_FILE_MRU_FILE14      "開啟這份文件"
+    ID_FILE_MRU_FILE15      "開啟這份文件"
+    ID_FILE_MRU_FILE16      "開啟這份文件"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切換至下一窗格\n下一個窗格"
+    ID_PREV_PANE            "切換至上一個窗格\n上一個窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "將使用中視窗切割成窗格\n分割視窗"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除選取範圍\n清除"
+    ID_EDIT_CLEAR_ALL       "清除所有的項目\n全部清除"
+    ID_EDIT_COPY            "複製選取項目並放到剪貼簿\n複製"
+    ID_EDIT_CUT             "剪下選取項目並放到剪貼簿\n剪下"
+    ID_EDIT_FIND            "尋找指定的文字\n尋找"
+    ID_EDIT_PASTE           "插入剪貼簿的內容\n貼上"
+    ID_EDIT_REPEAT          "重複上次的動作\n重複"
+    ID_EDIT_REPLACE         "用不同的文字取代指定文字\n取代"
+    ID_EDIT_SELECT_ALL      "選取整份文件\n全選"
+    ID_EDIT_UNDO            "復原上次的動作\n復原"
+    ID_EDIT_REDO            "取消復原上次的動作\n取消復原"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "顯示或隱藏工具列\n切換工具列"
+    ID_VIEW_STATUS_BAR      "顯示或隱藏狀態列\n切換狀態列"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "變更視窗大小"
+    AFX_IDS_SCMOVE          "變更視窗位置"
+    AFX_IDS_SCMINIMIZE      "將視窗縮成一個圖示"
+    AFX_IDS_SCMAXIMIZE      "將視窗放到最大"
+    AFX_IDS_SCNEXTWINDOW    "切換至下一個文件視窗"
+    AFX_IDS_SCPREVWINDOW    "切換至上一個文件視窗"
+    AFX_IDS_SCCLOSE         "關閉使用中視窗並提示使用者儲存文件"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "將視窗還原成標準大小"
+    AFX_IDS_SCTASKLIST      "啟動工作清單"
+END
+
+#endif    // 中文 (台灣) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE 4, 1
+#pragma code_page(950)
+#include "res\Awari.rc2"  // 非 Microsoft Visual C++ 編輯過的資源
+#include "afxres.rc"         // 標準元件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
